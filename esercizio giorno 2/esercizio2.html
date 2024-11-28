@@ -6,20 +6,16 @@
     <title>Sviluppo di una pagina web - Blog Epicode</title>
 </head>
 <body>
-    <section> <!--TAG SEMANTICO - DESCRIZIONE PAGINA-->
-        Primi passi operativi per creare un modello di pagina HTML per un post.<br/>
-        Scopri come iniziare in modo facile.
-    </section>
-
     <header><!--TAG SEMANTICO - INTESTAZIONE-->
         <img src="./assets/img/logo.svg" alt="Logo Epicode">
-        <h3> EPICODE - Il blog dei Developers</h3>
-
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Articoli</a></li>
-            <li><a href="#">Lavora con noi</a></li>
-        </ul>
+        <nav><!--TAG SEMANTICO DI NAVIGAZIONE-->
+            <h3> EPICODE - Il blog dei Developers</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articoli</a></li>
+                <li><a href="#">Lavora con noi</a></li>
+            </ul>
+        </nav>
 
     </header>
     <hr>
@@ -81,7 +77,7 @@
         </article>
     </main>
 
-    <nav><!--TAG SEMANTICO DI NAVIGAZIONE-->
+    <section><!--TAG SEMANTICO DI NAVIGAZIONE-->
         <p>Vuoi rimanere aggiornato su altre novità del Blog? Iscriviti alla nostra newsletter:</p>
         <Form method="post" >
             <fieldset>
@@ -91,7 +87,7 @@
                 <input type="submit" value="Iscriviti!">
             </fieldset>
         </Form>
-    </nav>
+    </section>
 
     <aside><!-- TAG SEMANTICO CONTENUTO SECONDARIO-->
         Articoli correlati
