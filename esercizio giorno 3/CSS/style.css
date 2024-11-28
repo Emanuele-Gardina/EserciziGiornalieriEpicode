@@ -4,6 +4,7 @@ header nav{
     background-color: rgb(254, 254, 200); 
     padding: 0.2em;
     border-top: 1px solid rgb(249, 249, 131);
+    color: rgb(2, 90, 90);
 }
 article{
     width: 50%;
@@ -17,4 +18,14 @@ article{
 }
 article img{
     width: 100%;
+    border-radius: 3%;
+}
+.link{
+    border-left: 1px solid yellow;
+}
+#testo{
+    color: red;
+}
+#method{
+    border-bottom: 1px solid aqua;
 }
