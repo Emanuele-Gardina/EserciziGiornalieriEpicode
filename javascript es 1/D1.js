@@ -12,34 +12,47 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-/* i principali datatype sono 5: stringhe dove al suo interno ci troviamo del testo e la formula corretta è la seguente "pippo";
-i numeri che possiamo trovare interi o con decimali esempio 1; 1.5;
-i booleani che può assumere solo i valori vero (true) o falso (false)
-undefined è quando la variabile è vuota 
-null è quando abbiamo dato del valore alla variabile ma volontariamente lo abbiamo tolto */
+console.log("ESERCIZIO 1");
+console.log("I principali DataType in Javascript sonno: ");
+console.log("String - Number - Boolean - Undefined - Null");
+console.log("Il tipo di DataType 'String' è un semplice Testo.");
+console.log("Il tipo di DataType 'Number' è un valore numerico (intero o decimale)");
+console.log("Il tipo di DataType 'Boolean' è un valore true o False");
+console.log("Il tipo di DataType 'Null' è un valore tolto intenzionalmente ad una variabile");
+console.log("Il tipo di DataType 'Undefined' indica l'assenza di un valore. Una variabile che non è stata mai inizializzata");
+console.log("*******************************************************");
+
 
 /* ESERCIZIO 2
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let myName= "Emanuele";
-console.log(myName)
+console.log("ESERCIZIO 2");
+let myName = "Emanuele";
+console.log("il mio nome è " + myName);
+console.log("*******************************************************");
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let numb1= 12;
-let numb2= 20;
-console.log(numb1+numb2)
+console.log("ESERCIZIO 3");
+let numb1 = 12;
+let numb2 = 20;
+let sum = numb1 + numb2;
+console.log("La somma dei numeri" + numb1 + " e " + numb2 + " è: " + sum);
+console.log("*******************************************************");
+
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let z= 12;
-console.log(z)
+console.log("ESERCIZIO 4");
+let x= 12;
+console.log("La variabile di nome x contiene il valore:" + x);
+console.log("*******************************************************");
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
@@ -47,17 +60,20 @@ console.log(z)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 5");
 const mySurname= "Gardina"
-console.log(mySurname)
+console.log("Il mio cognome è:" + mySurname);
+console.log("*******************************************************");
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let x= 12;
-let y= 4;
-console.log(x-y)
+console.log("ESERCIZIO 6");
+let result = 4 - x;
+console.log("La sottrazione tra il numero 4 e il contenuto della variabile x(" + x + ") è: " + result);
+console.log("*******************************************************");
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -66,7 +82,9 @@ console.log(x-y)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 7");
 let name1= "john";
 let name2= "John";
-console.log(name1===name2)
-console.log(name1!==name2)
+console.log("Il contenuto della variabile name1 (" + name1 + ") e il contenuto della variabile name2 (" + name2 +") è uguale: " + (name1===name2));
+console.log("Il contenuto della variabile name1 (" + name1.toLowerCase() + ") e il contenuto della variabile name2 (" + name2.toLowerCase() +") è uguale: " + (name1.toLowerCase()===name2.toLowerCase()));
+console.log("*******************************************************");
