@@ -93,6 +93,21 @@ console.log(tot)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function reverseString(str) {
+    let arrStr = str.split("");
+    /* let strReverse = "";
+    for(let i=arrStr.length; i>0; i--) {
+        strReverse += arrStr[i-1]
+    } 
+    return strReverse
+    */
+    let strReverse = arrStr.reverse();
+    return strReverse.join('')
+}
+
+const resultReverseString = reverseString("EPICODE");
+console.log("Il risultato della funzione reverseString è: " + resultReverseString)
+
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -100,6 +115,22 @@ console.log(tot)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const upperFirst = function(str) {
+    let arrStr = str.split(" ");
+    let stringaCompleta = []
+    for(let i=0; i<arrStr.length; i++) {
+        let parola = arrStr[i];
+        let firstLetter = parola.charAt(0).toUpperCase()
+        let parolaSenzaLaPrimaLettrera = parola.slice(1)
+        let parolaFinale = firstLetter + parolaSenzaLaPrimaLettrera
+        stringaCompleta.push(parolaFinale)
+    } 
+
+    return stringaCompleta.join(' ')
+}
+
+const resultUpperFirst = upperFirst("ciao a tutti come va javascript");
+console.log("Il risultato della funzione upperFirst è: " + resultUpperFirst)
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
